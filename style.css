@@ -1,0 +1,292 @@
+*{
+    margin: 0px;
+    text-decoration: none;
+    
+}
+
+body{
+    max-width: 1400px;
+    min-width: 360px;
+    margin: auto;
+    overflow: scroll;
+}
+
+.home{
+    background-color: beige;
+}
+
+#topo{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color:aliceblue;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(31, 30, 30, 0.9);
+    position: absolute fixed;
+    top: 0;
+    left: 0;
+    align-content: space-between;
+    align-items: center;
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-size: 23px;
+}
+
+.lista_menu{
+   display: flex;
+   list-style: none;
+   align-items: center;
+}
+
+li{
+    padding: 20px;
+}
+
+.container {
+    text-decoration: none;
+    width: 1000px;
+    height: 100%;
+   /* background-color: aqua; */
+   padding-right: 15px;
+   padding-left: 15px;
+   margin: auto; 
+   display: flex;
+}
+
+#logo_home{
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+   text-align: center;
+   /* background-color: black; */
+}
+
+
+.lista_redes_sociais{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#banner{
+    width: 100%;
+    height: 700px;
+    display: flex;
+
+}
+
+.container_banner{
+    width: 100%;
+    height: 100%;
+    border: 3px solid white;
+}
+
+.img_banner{
+    width: 100%;
+    height: 100%;
+}
+
+.escrita{
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(54, 4, 4);
+}
+
+#cardapio{
+    width: 100%;
+}
+
+#container_cardapio{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+    height: 700px;
+    box-sizing: border-box;
+}
+
+.container_cardapio_img{
+    height: 100%;
+    width: 100%;
+}
+
+.img_cardapio{
+    height: 100%;
+    width: 100%;
+    border: 3px solid rgba(54, 4, 4);
+    box-sizing: border-box;
+}
+
+#local_maps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+
+iframe{
+    margin-top: 15px;
+    width: 800px;
+    height: 400px;
+}
+
+.escrita3{
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(54, 4, 4);
+    padding: 20px;
+}
+
+.lista_redes_sociais{
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(54, 4, 4);
+}
+
+#instagram{
+    list-style-image: url(./Imagens/ig2.png);
+}
+
+#whatsapp{
+    list-style-image: url(./Imagens/wpp2.png);
+}
+
+footer{
+    background-color: rgba(31, 30, 30, 0.9);
+    color: white;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+#text_footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 1000px;
+}
+
+#text_footer > small{
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 25px;
+
+}
+
+.opc_menu:link, .opc_menu:visited{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.opc_contato{
+    display: inline-block;
+    text-decoration: none;
+    color:rgba(54, 4, 4);
+}
+
+#tras_banner{
+    width: 150%;
+    position: relative;
+
+}
+
+#frente_banner{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#img_banner_central{
+    height: 700px;
+    width: 100%;
+    opacity: 0.75;
+}
+.fundo_preto{
+    background-color: rgba (0, 0, 0, .372);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+@media screen and (max-width: 600px){
+    #topo{
+        flex-direction: column;
+        height: 500px;
+    
+    }
+
+    .lista_menu{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #logo_home{
+        height: 100px;
+        width: 180px;
+    }
+
+    #banner{
+        display: none;
+    }
+
+    .escrita{
+        font-size: 2.6rem;
+    }
+
+    #container_cardapio{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .escrita3{
+        font-size: 1rem;
+    }
+    
+    .lista_redes_sociais{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.6rem;
+    }
+
+    iframe{
+        width: 80%;
+        height: 200px;
+    }
+
+    #instagram, #whatsapp{
+        text-align: center;
+        list-style: none;
+    }
+
+    #text_footer{
+        font-size: 0.8rem;
+        text-align: center;
+}
+
+}
